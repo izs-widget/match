@@ -1,2 +1,109 @@
-# match
-IZS March Widget
+# IZS 'Match' Embedded Widget
+
+The `IZS embedded widget` is a versatile tool designed and developed for seamless integration into your website. This README provides a brief guide on how to use the widget.
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Demo](#demo)
+- [Customization](#customization)
+- [Support](#support)
+
+## Usage
+
+To get started with the `IZS 'Match' embedded widget`, you need to include the widget's script and styles on your website.
+
+### Step 1: Include the Widget Styles and Script
+
+Add the following link tag to the `<head>` section 
+
+```html
+<link rel="stylesheet" href="https://match-widget.izs-apps.com/izs-match-style.css">
+```
+
+and following script tag to the `<body>` section of your HTML file:
+
+```html
+<script src="https://match-widget.izs-apps.com/izs-match-widget.js"></script>
+```
+
+Example:
+
+```html
+<head>
+    ...
+    <link rel="stylesheet" href="https://match-widget.izs-apps.com/izs-match-style.css">
+    ...
+</head>
+<body>
+    ...
+    <script src="https://match-widget.izs-apps.com/izs-match-widget.js"></script>
+</body>
+```
+
+### Step 2: Initialize the Widget
+
+In the <body> section of your HTML file where you want the widget to appear, add the following html element with defined id attribute 
+
+```html
+<div id="izsMatchWidget"></div>
+```
+
+and initialize the widget with the folowing code, where you call the widget function with the selector of the widget container and the configuration object with required api key (provided by the ISZ support) and other optional properties.
+
+```javascript
+IzsMatchWidget.init('#izsMatchWidget', {
+  apiKey: 'sfe6efef87876efeeefe'
+});
+```
+
+### Basic Example
+
+Here is a basic example of how to use the widget:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://match-widget.izs-apps.com/izs-match-style.css">
+  <title>IZS Match Embedded Widget Example</title>
+</head>
+<body>
+  <div id="izsMatchWidget"></div>
+  
+  <script src="https://match-widget.izs-apps.com/izs-match-widget.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      IzsMatchWidget.init('#izsMatchWidget', {
+        apiKey: 'sfe6efef87876efeeefe'
+      });
+    });
+  </script>
+</body>
+</html>
+```
+
+## Demo
+
+You can visit a [demo page](https://match-widget.izs-apps.com/) with integrated IZS 'Match' Embedded Widget to see how it works.
+
+## Customization
+
+You are able to customize the IZS embedded widget by passing different options to the init method. For that aim there is additional object 'styles' where you can pass key-value pairs provided below to style different parts of the widget.
+All available options for styling with default values are provided below in the code example.
+
+```javascript
+IzsWidget.init('#izsWidget', {
+  apiKey: 'sfe6efef87876efeeefe' //required
+  styles: {
+    containerMaxWidth: '1366px', // max width of the main widget container, minimum value to set 860px
+    tabViewHeight: '600px', // height of the tab section, minimum value to set 400px
+  }
+});
+```
+
+## Support
+
+If you encounter any issues or have any questions, please reach out to our support team at info@izs-institut.de
