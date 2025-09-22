@@ -96,7 +96,7 @@ All available options for styling with default values are provided below in the 
 
 ```javascript
 IzsWidget.init('#izsWidget', {
-  apiKey: 'sfe6efef87876efeeefe' //required
+  apiKey: 'sfe6efef87876efeeefe', //required
   styles: {
     containerMaxWidth: '1366px', // max width of the main widget container, minimum value to set 860px
     tabViewHeight: '600px', // height of the tab section, minimum value to set 400px
