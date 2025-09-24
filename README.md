@@ -100,6 +100,22 @@ IzsWidget.init('#izsWidget', {
   styles: {
     containerMaxWidth: '1366px', // max width of the main widget container, minimum value to set 860px
     tabViewHeight: '600px', // height of the tab section, minimum value to set 400px
+
+    primaryColor: '#373737',
+    secondaryColor: '#202020',
+    backgroundColor: '#ffffff',
+    linkColor: '#ee7a0a',
+    selectedColor: '#f89809',
+
+    standardTextSize: '16px',
+    tableHeaderTextSize: '12px',
+    tableTextSize: '15px',
+
+    searchButtonTextColor: '#fff',
+    searchButtonBackgroundColor: '#ee7a0a',
+    searchButtonFontSize: '14px',
+    searchButtonBorderColor: '#ee7a0a',
+    searchButtonBorderRadius: '10px'
   }
 });
 ```
